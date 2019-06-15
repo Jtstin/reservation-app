@@ -1,27 +1,20 @@
 'use strict';
-
-const e = React.createElement;
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import 'bulma/bulma';
+import searchbar, { SearchBar } from './searchbar'
 
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { liked: false };
   }
 
   render() {
-    if (this.state.liked) {
-      return 'You liked this.';
-    }
-
-    return e(
-      'button',
-      { onClick: () => this.setState({ liked: true }) },
-      'Like'
-    );
+    return <div>
+      <SearchBar></SearchBar>
+    </div>
   }
 }
 
-
-
 const domContainer = document.querySelector('#app');
-ReactDOM.render(e(App), domContainer);
+ReactDOM.render(<App />, domContainer);
