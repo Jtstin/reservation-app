@@ -2,7 +2,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import 'bulma/bulma';
-import searchbar, { SearchBar } from './searchbar'
+import SearchBar from './searchbar';
+import ReservationForm from './reservationForm';
 
 class App extends React.Component {
   constructor(props) {
@@ -11,10 +12,13 @@ class App extends React.Component {
 
   render() {
     return <div>
-      <SearchBar></SearchBar>
-    </div>
+        <SearchBar></SearchBar>
+        <ReservationForm></ReservationForm>
+      </div>
+  
   }
 }
 
 const domContainer = document.querySelector('#app');
 ReactDOM.render(<App />, domContainer);
+
