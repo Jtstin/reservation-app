@@ -4,15 +4,16 @@ export default class ReservationForm extends React.Component{
         super(props);
     }
     render(){
-        return( <div>
-                <p>Name <input type = "text"></input></p>
-                <p>Number Of People <input type = "text"></input></p>
-                <p>Phone Number <input type = "text"></input></p>
-                <p>Session <input type = "radio" value="Breakfast"></input>Breakfast
+        return( <div className = "flex-container">
+                <span className = "textinput flex-item-1"><input placeholder="Restaurant" type = "text"></input></span>
+                <span className = "textinput flex-item"><input placeholder ="Name" type = "text"></input></span>
+                <span className = "textinput flex-item"><input  placeholder= "Number of People" type = "text"></input></span>
+                <span className = "textinput flex-item"><input placeholder= "Phone Number" type = "text"></input></span>
+                <span className = "textinput flex-item">Session<input type = "radio" value="Breakfast"></input>Breakfast
                 <input type = "radio" value="Lunch"></input>Lunch
-                <input type = "radio" value="Dinner"></input>Dinner</p>
-                <p>Time <input type = "time"></input></p>
+                <input type = "radio" value="Dinner"></input>Dinner</span>
+                <span className = "textinput flex-item">Time<input type = "time"></input></span>
                 </div>
               )
     }
-};      
+};     
