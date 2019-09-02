@@ -9,10 +9,10 @@ export default class ReservationForm extends React.Component{
                 <span className = "textinput flex-item"><input placeholder ="Name" type = "text"></input></span>
                 <span className = "textinput flex-item"><input  placeholder= "Number of People" type = "text"></input></span>
                 <span className = "textinput flex-item"><input placeholder= "Phone Number" type = "text"></input></span>
-                <span className = "textinput flex-item">Session<input type = "radio" value="Breakfast"></input>Breakfast
+                <span className = "textinput flex-item"><input type = "radio" value="Breakfast"></input>Breakfast
                 <input type = "radio" value="Lunch"></input>Lunch
                 <input type = "radio" value="Dinner"></input>Dinner</span>
-                <span className = "textinput flex-item">Time<input type = "time"></input></span>
+                <span className = "textinput flex-item"><input type = "time"></input></span>
                 </div>
               )
     }

@@ -11,9 +11,14 @@ class App extends React.Component {
   }
 
   render() {
-    return <div>
-        <ReservationForm></ReservationForm>
-      </div>
+    return (<div>
+    <header>Reservation App</header>
+    <main>
+      <ReservationForm></ReservationForm>
+    </main>
+    <footer></footer>
+    </div>);
+        
   
   }
 }
