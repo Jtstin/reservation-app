@@ -72,16 +72,4 @@ input {
 	background-color: black;
 }
 
-header{
-   font-family: Rubiks;
-   font-weight: bold; 
-   font-size: 50pt;
-   color: rgb(19, 214, 214);
-   background-color: black;
-   text-align: center;
-}
 
-@font-face{
-	font-family: Rubiks;
-	src: url('./rubik/') format("ttf");
-}
